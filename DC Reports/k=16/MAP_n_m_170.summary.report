@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : qor
+Design : MAP_n_m
+Version: C-2009.06-SP5
+Date   : Tue Sep 18 14:24:29 2018
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              82.00
+  Critical Path Length:          4.16
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      4.20
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       1079
+  Hierarchical Port Count:     152058
+  Leaf Cell Count:             213829
+  Buf/Inv Cell Count:           41830
+  CT Buf/Inv Cell Count:            0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   201250.812279
+  Noncombinational Area: 41358.210504
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:            242609.022783
+  Design Area:          242609.022783
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        231601
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ICICVM.lab.edu
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:            131.43
+  Logic Optimization:          947.41
+  Mapping Optimization:        910.34
+  -----------------------------------
+  Overall Compile Time:       2061.52
+
+1

@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : MAP_n_m
+Version: C-2009.06-SP5
+Date   : Mon Sep 17 20:44:09 2018
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/icic/Desktop/Power/New/Nandgate45.db)
+
+Number of ports:              724
+Number of nets:             17136
+Number of cells:               89
+Number of references:          69
+
+Combinational area:       379883.644903
+Noncombinational area:    87064.988853
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          466948.633756
+Total area:                 undefined
+1

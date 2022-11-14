@@ -1,0 +1,213 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'MAP_n_m' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MAP_n_m
+Version: C-2009.06-SP5
+Date   : Tue Sep 18 20:09:39 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: MAP1_91/control/r_count/i_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MAP1_91/adding_map/addc/d_reg2_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MAP_n_m            1K_hvratio_1_4        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MAP1_91/control/r_count/i_reg[1]/CK (DFF_X1)            0.00 #     0.00 r
+  MAP1_91/control/r_count/i_reg[1]/Q (DFF_X1)             0.15       0.15 r
+  MAP1_91/control/r_count/dout[1] (counter_n2_1)          0.00       0.15 r
+  MAP1_91/control/add_row[1] (map_shifter_controller_n3_addr_col7_col107_addr_row2_row3_1)
+                                                          0.00       0.15 r
+  MAP1_91/MAP1_ROM/addr_r[1] (ROM_addr_col7_col107_addr_row2_row3_1)
+                                                          0.00       0.15 r
+  MAP1_91/MAP1_ROM/U360/ZN (INV_X1)                       0.03       0.18 f
+  MAP1_91/MAP1_ROM/U1556/ZN (NAND2_X1)                    0.09       0.27 r
+  MAP1_91/MAP1_ROM/U323/ZN (NAND2_X1)                     0.10       0.37 f
+  MAP1_91/MAP1_ROM/U10/ZN (INV_X2)                        0.11       0.48 r
+  MAP1_91/MAP1_ROM/U9/ZN (NAND2_X2)                       0.10       0.58 f
+  MAP1_91/MAP1_ROM/U6/ZN (INV_X2)                         0.13       0.71 r
+  MAP1_91/MAP1_ROM/U1267/Z (MUX2_X1)                      0.07       0.78 r
+  MAP1_91/MAP1_ROM/U173/ZN (INV_X1)                       0.02       0.80 f
+  MAP1_91/MAP1_ROM/U712/Z (MUX2_X1)                       0.07       0.87 f
+  MAP1_91/MAP1_ROM/U713/Z (MUX2_X1)                       0.06       0.93 f
+  MAP1_91/MAP1_ROM/U717/Z (MUX2_X1)                       0.06       0.99 f
+  MAP1_91/MAP1_ROM/U718/Z (MUX2_X1)                       0.06       1.06 f
+  MAP1_91/MAP1_ROM/U719/Z (MUX2_X1)                       0.06       1.12 f
+  MAP1_91/MAP1_ROM/U11/Z (MUX2_X2)                        0.08       1.20 f
+  MAP1_91/MAP1_ROM/data[6] (ROM_addr_col7_col107_addr_row2_row3_1)
+                                                          0.00       1.20 f
+  MAP1_91/mull_shift/load2[1] (mul_1)                     0.00       1.20 f
+  MAP1_91/mull_shift/U26/ZN (INV_X1)                      0.03       1.23 r
+  MAP1_91/mull_shift/U338/ZN (NAND2_X1)                   0.03       1.26 f
+  MAP1_91/mull_shift/U16/ZN (INV_X1)                      0.09       1.35 r
+  MAP1_91/mull_shift/U141/ZN (AOI22_X1)                   0.07       1.41 f
+  MAP1_91/mull_shift/U122/ZN (NOR2_X1)                    0.05       1.46 r
+  MAP1_91/mull_shift/U134/ZN (NOR2_X1)                    0.02       1.49 f
+  MAP1_91/mull_shift/U133/ZN (OAI211_X1)                  0.05       1.53 r
+  MAP1_91/mull_shift/dout2[1] (mul_1)                     0.00       1.53 r
+  MAP1_91/adding_map/mulx2[1] (cla_4_1)                   0.00       1.53 r
+  MAP1_91/adding_map/addc/din1[1] (add_cla_3)             0.00       1.53 r
+  MAP1_91/adding_map/addc/add1/din1[1] (cla_add_16_32_3)
+                                                          0.00       1.53 r
+  MAP1_91/adding_map/addc/add1/U14/ZN (NOR2_X1)           0.03       1.56 f
+  MAP1_91/adding_map/addc/add1/U13/ZN (AOI21_X1)          0.05       1.61 r
+  MAP1_91/adding_map/addc/add1/U6/ZN (OAI21_X1)           0.03       1.64 f
+  MAP1_91/adding_map/addc/add1/U73/ZN (AOI21_X1)          0.04       1.69 r
+  MAP1_91/adding_map/addc/add1/U9/ZN (OAI21_X1)           0.03       1.71 f
+  MAP1_91/adding_map/addc/add1/U7/ZN (AOI21_X1)           0.04       1.75 r
+  MAP1_91/adding_map/addc/add1/U4/ZN (OAI21_X1)           0.03       1.78 f
+  MAP1_91/adding_map/addc/add1/U82/ZN (AOI21_X1)          0.04       1.82 r
+  MAP1_91/adding_map/addc/add1/U25/ZN (OAI21_X1)          0.03       1.85 f
+  MAP1_91/adding_map/addc/add1/U90/ZN (AOI21_X1)          0.04       1.89 r
+  MAP1_91/adding_map/addc/add1/U12/ZN (OAI21_X1)          0.03       1.92 f
+  MAP1_91/adding_map/addc/add1/U10/ZN (AOI21_X1)          0.04       1.96 r
+  MAP1_91/adding_map/addc/add1/U29/ZN (OAI21_X1)          0.03       1.99 f
+  MAP1_91/adding_map/addc/add1/U103/ZN (AOI21_X1)         0.04       2.03 r
+  MAP1_91/adding_map/addc/add1/U27/ZN (OAI21_X1)          0.03       2.05 f
+  MAP1_91/adding_map/addc/add1/U110/ZN (AOI21_X1)         0.04       2.10 r
+  MAP1_91/adding_map/addc/add1/U33/ZN (OAI21_X1)          0.03       2.12 f
+  MAP1_91/adding_map/addc/add1/U32/ZN (OAI211_X1)         0.04       2.17 r
+  MAP1_91/adding_map/addc/add1/mux1/sel (mux_2_n31_5)     0.00       2.17 r
+  MAP1_91/adding_map/addc/add1/mux1/U3/Z (BUF_X1)         0.10       2.27 r
+  MAP1_91/adding_map/addc/add1/mux1/U4/Z (MUX2_X1)        0.10       2.37 f
+  MAP1_91/adding_map/addc/add1/mux1/c[0] (mux_2_n31_5)
+                                                          0.00       2.37 f
+  MAP1_91/adding_map/addc/add1/comp/din[0] (twoscompliment_n31_3)
+                                                          0.00       2.37 f
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/B[0] (twoscompliment_n31_3_DW01_sub_0)
+                                                          0.00       2.37 f
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U62/ZN (INV_X1)
+                                                          0.03       2.40 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U29/ZN (AND2_X1)
+                                                          0.04       2.44 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U28/ZN (AND2_X1)
+                                                          0.05       2.49 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U27/ZN (AND2_X1)
+                                                          0.05       2.53 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U25/ZN (AND2_X1)
+                                                          0.05       2.58 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U24/ZN (AND2_X1)
+                                                          0.05       2.62 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U22/ZN (AND2_X1)
+                                                          0.05       2.67 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U21/ZN (AND2_X1)
+                                                          0.05       2.72 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U19/ZN (AND2_X1)
+                                                          0.05       2.76 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U18/ZN (AND2_X1)
+                                                          0.05       2.81 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U16/ZN (AND2_X1)
+                                                          0.05       2.85 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U15/ZN (AND2_X1)
+                                                          0.05       2.90 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U13/ZN (AND2_X1)
+                                                          0.05       2.94 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U14/ZN (AND2_X1)
+                                                          0.05       2.99 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U10/ZN (AND2_X1)
+                                                          0.05       3.03 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U7/ZN (AND2_X1)
+                                                          0.05       3.08 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U1/ZN (AND2_X1)
+                                                          0.05       3.12 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U2/ZN (AND2_X1)
+                                                          0.05       3.17 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U3/ZN (AND2_X1)
+                                                          0.05       3.21 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U4/ZN (AND2_X1)
+                                                          0.05       3.26 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U5/ZN (AND2_X1)
+                                                          0.05       3.30 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U6/ZN (AND2_X1)
+                                                          0.05       3.35 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U8/ZN (AND2_X1)
+                                                          0.05       3.39 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U9/ZN (AND2_X1)
+                                                          0.05       3.44 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U11/ZN (AND2_X1)
+                                                          0.05       3.49 r
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/U36/Z (XOR2_X1)
+                                                          0.03       3.51 f
+  MAP1_91/adding_map/addc/add1/comp/sub_add_1119_b0/DIFF[25] (twoscompliment_n31_3_DW01_sub_0)
+                                                          0.00       3.51 f
+  MAP1_91/adding_map/addc/add1/comp/U32/Z (MUX2_X1)       0.07       3.59 f
+  MAP1_91/adding_map/addc/add1/comp/dout[25] (twoscompliment_n31_3)
+                                                          0.00       3.59 f
+  MAP1_91/adding_map/addc/add1/adding/din2[25] (cla_16_32_3)
+                                                          0.00       3.59 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/din2[9] (cla_16_5)
+                                                          0.00       3.59 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/mu_gap/din2[9] (GAP_16_5)
+                                                          0.00       3.59 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/mu_gap/U21/ZN (OR2_X1)
+                                                          0.07       3.66 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/mu_gap/A[9] (GAP_16_5)
+                                                          0.00       3.66 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/a[9] (CLG_16_5)
+                                                          0.00       3.66 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U48/ZN (AND3_X1)
+                                                          0.05       3.71 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U26/ZN (AND2_X1)
+                                                          0.05       3.76 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U84/ZN (NAND2_X1)
+                                                          0.04       3.79 r
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U85/ZN (INV_X1)
+                                                          0.03       3.82 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U86/ZN (NAND2_X1)
+                                                          0.03       3.86 r
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U127/ZN (INV_X1)
+                                                          0.02       3.88 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U28/ZN (AOI211_X1)
+                                                          0.07       3.95 r
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U27/ZN (OAI211_X1)
+                                                          0.04       3.98 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U129/ZN (NAND2_X1)
+                                                          0.03       4.01 r
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/U130/ZN (NAND3_X1)
+                                                          0.03       4.05 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/MY_CLG/c[14] (CLG_16_5)
+                                                          0.00       4.05 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/U10/Z (XOR2_X1)
+                                                          0.06       4.11 f
+  MAP1_91/adding_map/addc/add1/adding/cla_16_2/dout[15] (cla_16_5)
+                                                          0.00       4.11 f
+  MAP1_91/adding_map/addc/add1/adding/dout[31] (cla_16_32_3)
+                                                          0.00       4.11 f
+  MAP1_91/adding_map/addc/add1/dout[31] (cla_add_16_32_3)
+                                                          0.00       4.11 f
+  MAP1_91/adding_map/addc/U102/ZN (NAND2_X1)              0.02       4.13 r
+  MAP1_91/adding_map/addc/U105/ZN (NAND2_X1)              0.02       4.15 f
+  MAP1_91/adding_map/addc/d_reg2_reg[31]/D (DFF_X1)       0.01       4.16 f
+  data arrival time                                                  4.16
+
+  clock clk (rise edge)                                   4.20       4.20
+  clock network delay (ideal)                             0.00       4.20
+  MAP1_91/adding_map/addc/d_reg2_reg[31]/CK (DFF_X1)      0.00       4.20 r
+  library setup time                                     -0.04       4.16
+  data required time                                                 4.16
+  --------------------------------------------------------------------------
+  data required time                                                 4.16
+  data arrival time                                                 -4.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

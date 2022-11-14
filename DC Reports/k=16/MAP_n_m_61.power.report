@@ -1,0 +1,328 @@
+Loading db file '/home/icic/Desktop/Power/New/Nandgate45.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -cell
+        -analysis_effort low
+        -verbose
+        -sort_mode cell_internal_power
+Design : MAP_n_m
+Version: C-2009.06-SP5
+Date   : Tue Sep 18 10:54:47 2018
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/icic/Desktop/Power/New/Nandgate45.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+MAP_n_m                1K_hvratio_1_4    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+
+                        Cell      Driven Net  Tot Dynamic      Cell
+                        Internal  Switching   Power            Leakage
+Cell                    Power     Power       (% Cell/Tot)     Power      Attrs
+--------------------------------------------------------------------------------
+MAP1_6                   867.4166       N/A        N/A (N/A)   254743.1562
+                                                                          h
+MAP1_3                   867.0371       N/A        N/A (N/A)   255370.6562
+                                                                          h
+MAP1_1                   866.9354       N/A        N/A (N/A)   254722.0000
+                                                                          h
+MAP1_19                  866.8232       N/A        N/A (N/A)   255782.9688
+                                                                          h
+MAP1_2                   866.8144       N/A        N/A (N/A)   254479.8438
+                                                                          h
+MAP1_31                  866.7907       N/A        N/A (N/A)   254935.6250
+                                                                          h
+MAP1_8                   866.7675       N/A        N/A (N/A)   255142.0781
+                                                                          h
+MAP1_14                  866.5880       N/A        N/A (N/A)   253724.8438
+                                                                          h
+MAP1_25                  866.5786       N/A        N/A (N/A)   255274.4062
+                                                                          h
+MAP1_4                   866.5219       N/A        N/A (N/A)   255242.1719
+                                                                          h
+MAP1_28                  866.4842       N/A        N/A (N/A)   255117.3125
+                                                                          h
+MAP1_17                  866.4739       N/A        N/A (N/A)   254789.0312
+                                                                          h
+MAP1_13                  866.4585       N/A        N/A (N/A)   255355.5781
+                                                                          h
+MAP1_30                  866.4575       N/A        N/A (N/A)   255721.7656
+                                                                          h
+MAP1_5                   866.3836       N/A        N/A (N/A)   254774.0625
+                                                                          h
+MAP1_7                   866.3685       N/A        N/A (N/A)   255367.0938
+                                                                          h
+MAP1_21                  866.3674       N/A        N/A (N/A)   255790.8750
+                                                                          h
+MAP1_26                  866.3412       N/A        N/A (N/A)   255497.6562
+                                                                          h
+MAP1_27                  866.3391       N/A        N/A (N/A)   254698.3750
+                                                                          h
+MAP1_29                  866.3136       N/A        N/A (N/A)   255038.0000
+                                                                          h
+MAP1_33                  866.1933       N/A        N/A (N/A)   255212.2188
+                                                                          h
+MAP1_18                  866.1629       N/A        N/A (N/A)   254896.0469
+                                                                          h
+MAP1_22                  866.1212       N/A        N/A (N/A)   255344.1875
+                                                                          h
+MAP1_11                  866.0990       N/A        N/A (N/A)   254384.8438
+                                                                          h
+MAP1_20                  866.0905       N/A        N/A (N/A)   254097.1250
+                                                                          h
+MAP1_12                  866.0565       N/A        N/A (N/A)   254725.7344
+                                                                          h
+MAP1_36                  866.0135       N/A        N/A (N/A)   254841.4688
+                                                                          h
+MAP1_15                  865.9276       N/A        N/A (N/A)   255186.2812
+                                                                          h
+MAP1_24                  865.9055       N/A        N/A (N/A)   255172.7188
+                                                                          h
+MAP1_16                  865.8712       N/A        N/A (N/A)   254934.3438
+                                                                          h
+MAP1_9                   865.8578       N/A        N/A (N/A)   254707.9219
+                                                                          h
+MAP1_10                  865.8303       N/A        N/A (N/A)   254742.7188
+                                                                          h
+MAP1_34                  865.6868       N/A        N/A (N/A)   254624.1250
+                                                                          h
+MAP1_32                  865.6535       N/A        N/A (N/A)   254042.9219
+                                                                          h
+MAP1_23                  865.5391       N/A        N/A (N/A)   254773.8281
+                                                                          h
+MAP1_35                  865.1111       N/A        N/A (N/A)   254194.4375
+                                                                          h
+CAP_f                    434.1096       N/A        N/A (N/A)   138818.0156
+                                                                          h
+CAP_4_1                  434.0737       N/A        N/A (N/A)   138742.2812
+                                                                          h
+CAP_2_1                  434.0629       N/A        N/A (N/A)   138861.1094
+                                                                          h
+CAP_6_1                  434.0601       N/A        N/A (N/A)   137166.0469
+                                                                          h
+CAP_5_1                  434.0444       N/A        N/A (N/A)   137926.7969
+                                                                          h
+CAP_3_1                  434.0212       N/A        N/A (N/A)   136902.7656
+                                                                          h
+CAP_1_2                  433.7936       N/A        N/A (N/A)   138115.4375
+                                                                          h
+CAP_1_3                  433.4912       N/A        N/A (N/A)   136861.0312
+                                                                          h
+CAP_1_1                  431.5932       N/A        N/A (N/A)   138407.1094
+                                                                          h
+U2                         0.1177    1.7203      1.838 (6%)      43.0608   
+U3                         0.1177    1.7203      1.838 (6%)      43.0608   
+U4                         0.1177    1.7203      1.838 (6%)      43.0608   
+U5                         0.1177    1.7203      1.838 (6%)      43.0608   
+U6                         0.1177    1.7203      1.838 (6%)      43.0608   
+U7                         0.1177    1.7203      1.838 (6%)      43.0608   
+U8                         0.0599    0.3834      0.443 (14%)     21.4382   
+U9                         0.0599    0.3834      0.443 (14%)     21.4382   
+U10                        0.0599    0.3834      0.443 (14%)     21.4382   
+U1                         0.0594    0.6151      0.675 (9%)      21.4382   
+bus_map1_to_map2           0.0000       N/A        N/A (N/A)      0.0000  h
+bus_map2_to_map3           0.0000       N/A        N/A (N/A)      0.0000  h
+bus_map3_to_map4           0.0000       N/A        N/A (N/A)      0.0000  h
+bus_map4_to_map5           0.0000       N/A        N/A (N/A)      0.0000  h
+bus_map5_to_map6           0.0000       N/A        N/A (N/A)      0.0000  h
+bus_map6_to_map7           0.0000       N/A        N/A (N/A)      0.0000  h
+--------------------------------------------------------------------------------
+Totals (61 cells)         35.091mW     N/A         N/A (N/A)     10.420mW
+
+
+
+  Attributes
+  ----------
+      h  -  Hierarchical cell
+      a  -  User annotated State/Path Dependent (SDPD) information
+      e  -  Estimated SDPD from user annotated non-SDPD switching activity
+      d  -  Estimated SDPD from default annotated non-SDPD switching activity
+
+               Toggling Source   State Pin Toggle Internal     Leakage
+Cell           Pin      of Path  Cond  Rate       Power        Power    Attrs
+--------------------------------------------------------------------------------
+MAP1_6                                            867.4166    254743.1562
+                                                                        h
+MAP1_3                                            867.0371    255370.6562
+                                                                        h
+MAP1_1                                            866.9354    254722.0000
+                                                                        h
+MAP1_19                                           866.8232    255782.9688
+                                                                        h
+MAP1_2                                            866.8144    254479.8438
+                                                                        h
+MAP1_31                                           866.7907    254935.6250
+                                                                        h
+MAP1_8                                            866.7675    255142.0781
+                                                                        h
+MAP1_14                                           866.5880    253724.8438
+                                                                        h
+MAP1_25                                           866.5786    255274.4062
+                                                                        h
+MAP1_4                                            866.5219    255242.1719
+                                                                        h
+MAP1_28                                           866.4842    255117.3125
+                                                                        h
+MAP1_17                                           866.4739    254789.0312
+                                                                        h
+MAP1_13                                           866.4585    255355.5781
+                                                                        h
+MAP1_30                                           866.4575    255721.7656
+                                                                        h
+MAP1_5                                            866.3836    254774.0625
+                                                                        h
+MAP1_7                                            866.3685    255367.0938
+                                                                        h
+MAP1_21                                           866.3674    255790.8750
+                                                                        h
+MAP1_26                                           866.3412    255497.6562
+                                                                        h
+MAP1_27                                           866.3391    254698.3750
+                                                                        h
+MAP1_29                                           866.3136    255038.0000
+                                                                        h
+MAP1_33                                           866.1933    255212.2188
+                                                                        h
+MAP1_18                                           866.1629    254896.0469
+                                                                        h
+MAP1_22                                           866.1212    255344.1875
+                                                                        h
+MAP1_11                                           866.0990    254384.8438
+                                                                        h
+MAP1_20                                           866.0905    254097.1250
+                                                                        h
+MAP1_12                                           866.0565    254725.7344
+                                                                        h
+MAP1_36                                           866.0135    254841.4688
+                                                                        h
+MAP1_15                                           865.9276    255186.2812
+                                                                        h
+MAP1_24                                           865.9055    255172.7188
+                                                                        h
+MAP1_16                                           865.8712    254934.3438
+                                                                        h
+MAP1_9                                            865.8578    254707.9219
+                                                                        h
+MAP1_10                                           865.8303    254742.7188
+                                                                        h
+MAP1_34                                           865.6868    254624.1250
+                                                                        h
+MAP1_32                                           865.6535    254042.9219
+                                                                        h
+MAP1_23                                           865.5391    254773.8281
+                                                                        h
+MAP1_35                                           865.1111    254194.4375
+                                                                        h
+CAP_f                                             434.1096    138818.0156
+                                                                        h
+CAP_4_1                                           434.0737    138742.2812
+                                                                        h
+CAP_2_1                                           434.0629    138861.1094
+                                                                        h
+CAP_6_1                                           434.0601    137166.0469
+                                                                        h
+CAP_5_1                                           434.0444    137926.7969
+                                                                        h
+CAP_3_1                                           434.0212    136902.7656
+                                                                        h
+CAP_1_2                                           433.7936    138115.4375
+                                                                        h
+CAP_1_3                                           433.4912    136861.0312
+                                                                        h
+CAP_1_1                                           431.5932    138407.1094
+                                                                        h
+   U2          Z        A               0.0119      0.0442              d r
+   U2          Z        A               0.0119      0.0736              d f
+   U2                            A'                             23.6552  
+   U2                            A                              19.4056  
+   U2                            default                         0.0000  
+U2  (Cell Total)                                    0.1177      43.0608
+   U3          Z        A               0.0119      0.0442              d r
+   U3          Z        A               0.0119      0.0736              d f
+   U3                            A'                             23.6552  
+   U3                            A                              19.4056  
+   U3                            default                         0.0000  
+U3  (Cell Total)                                    0.1177      43.0608
+   U4          Z        A               0.0119      0.0442              d r
+   U4          Z        A               0.0119      0.0736              d f
+   U4                            A'                             23.6552  
+   U4                            A                              19.4056  
+   U4                            default                         0.0000  
+U4  (Cell Total)                                    0.1177      43.0608
+   U5          Z        A               0.0119      0.0442              d r
+   U5          Z        A               0.0119      0.0736              d f
+   U5                            A'                             23.6552  
+   U5                            A                              19.4056  
+   U5                            default                         0.0000  
+U5  (Cell Total)                                    0.1177      43.0608
+   U6          Z        A               0.0119      0.0442              d r
+   U6          Z        A               0.0119      0.0736              d f
+   U6                            A'                             23.6552  
+   U6                            A                              19.4056  
+   U6                            default                         0.0000  
+U6  (Cell Total)                                    0.1177      43.0608
+   U7          Z        A               0.0119      0.0442              d r
+   U7          Z        A               0.0119      0.0736              d f
+   U7                            A'                             23.6552  
+   U7                            A                              19.4056  
+   U7                            default                         0.0000  
+U7  (Cell Total)                                    0.1177      43.0608
+   U8          Z        A               0.0119      0.0216              d r
+   U8          Z        A               0.0119      0.0383              d f
+   U8                            A'                             11.7963  
+   U8                            A                               9.6419  
+   U8                            default                         0.0000  
+U8  (Cell Total)                                    0.0599      21.4382
+   U9          Z        A               0.0119      0.0216              d r
+   U9          Z        A               0.0119      0.0383              d f
+   U9                            A'                             11.7963  
+   U9                            A                               9.6419  
+   U9                            default                         0.0000  
+U9  (Cell Total)                                    0.0599      21.4382
+   U10         Z        A               0.0119      0.0216              d r
+   U10         Z        A               0.0119      0.0383              d f
+   U10                           A'                             11.7963  
+   U10                           A                               9.6419  
+   U10                           default                         0.0000  
+U10  (Cell Total)                                   0.0599      21.4382
+   U1          Z        A               0.0119      0.0210              d r
+   U1          Z        A               0.0119      0.0384              d f
+   U1                            A'                             11.7963  
+   U1                            A                               9.6419  
+   U1                            default                         0.0000  
+U1  (Cell Total)                                    0.0594      21.4382
+bus_map1_to_map2                                    0.0000       0.0000 h
+bus_map2_to_map3                                    0.0000       0.0000 h
+bus_map3_to_map4                                    0.0000       0.0000 h
+bus_map4_to_map5                                    0.0000       0.0000 h
+bus_map5_to_map6                                    0.0000       0.0000 h
+bus_map6_to_map7                                    0.0000       0.0000 h
+--------------------------------------------------------------------------------
+Totals (61 cells)                                  35.091mW     10.420mW
+1

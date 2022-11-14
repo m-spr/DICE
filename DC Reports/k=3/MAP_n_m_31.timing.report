@@ -1,0 +1,241 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'MAP_n_m' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MAP_n_m
+Version: C-2009.06-SP5
+Date   : Mon Sep 17 23:29:55 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: CAP_2_4/ctrl/r_count/i_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CAP_2_4/CAP_N/CAPG/C_add/d_reg1_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MAP_n_m            1K_hvratio_1_4        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  CAP_2_4/ctrl/r_count/i_reg[3]/CK (DFF_X1)               0.00 #     0.00 r
+  CAP_2_4/ctrl/r_count/i_reg[3]/Q (DFF_X1)                0.08       0.08 f
+  CAP_2_4/ctrl/r_count/dout[3] (counter_n3_17)            0.00       0.08 f
+  CAP_2_4/ctrl/U3/Z (BUF_X4)                              0.05       0.13 f
+  CAP_2_4/ctrl/sel[3] (CAP_controller_n3_17)              0.00       0.13 f
+  CAP_2_4/CAP_N/sel[3] (CAP4_n3_17)                       0.00       0.13 f
+  CAP_2_4/CAP_N/U1/Z (BUF_X1)                             0.05       0.18 f
+  CAP_2_4/CAP_N/CAPG/sel[3] (CAP1_n3_65)                  0.00       0.18 f
+  CAP_2_4/CAP_N/CAPG/mux/sel[3] (mux_cascading_65)        0.00       0.18 f
+  CAP_2_4/CAP_N/CAPG/mux/U418/ZN (INV_X1)                 0.03       0.21 r
+  CAP_2_4/CAP_N/CAPG/mux/U18/ZN (NOR2_X1)                 0.02       0.24 f
+  CAP_2_4/CAP_N/CAPG/mux/U9/ZN (AND2_X1)                  0.05       0.29 f
+  CAP_2_4/CAP_N/CAPG/mux/U26/Z (CLKBUF_X1)                0.06       0.34 f
+  CAP_2_4/CAP_N/CAPG/mux/U124/ZN (AOI22_X1)               0.06       0.40 r
+  CAP_2_4/CAP_N/CAPG/mux/U48/ZN (AND4_X1)                 0.07       0.47 r
+  CAP_2_4/CAP_N/CAPG/mux/U47/ZN (NAND2_X1)                0.03       0.49 f
+  CAP_2_4/CAP_N/CAPG/mux/dout[0] (mux_cascading_65)       0.00       0.49 f
+  CAP_2_4/CAP_N/CAPG/C_add/din[0] (cap_add_65)            0.00       0.49 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/din1[0] (SIGNED_ADD_n31_65)
+                                                          0.00       0.49 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U163/ZN (INV_X1)         0.03       0.52 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U51/ZN (NOR2_X1)         0.02       0.54 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U172/ZN (OAI222_X1)      0.06       0.60 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U170/ZN (INV_X1)         0.02       0.62 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U173/ZN (AOI221_X1)      0.08       0.70 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U59/ZN (NOR2_X1)         0.02       0.72 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U22/ZN (NOR2_X1)         0.03       0.75 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U47/ZN (OR2_X1)          0.03       0.78 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U46/ZN (NOR3_X1)         0.02       0.80 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U37/ZN (NOR3_X1)         0.06       0.86 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U65/ZN (NOR2_X1)         0.02       0.88 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U28/ZN (NOR3_X1)         0.04       0.93 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U91/ZN (NOR3_X1)         0.02       0.95 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U94/ZN (NOR3_X1)         0.05       1.00 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U67/ZN (NOR2_X1)         0.02       1.02 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U174/ZN (AOI221_X1)      0.08       1.09 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U56/ZN (OR2_X1)          0.04       1.13 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U19/ZN (NAND2_X1)        0.02       1.15 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U20/ZN (AND2_X1)         0.03       1.18 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U57/ZN (OR2_X1)          0.05       1.23 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U43/ZN (NOR3_X1)         0.06       1.29 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U40/ZN (NOR3_X1)         0.02       1.31 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U175/ZN (AOI221_X1)      0.08       1.39 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U4/ZN (OR3_X2)           0.04       1.43 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U18/ZN (AND2_X1)         0.04       1.46 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U34/ZN (NOR3_X1)         0.02       1.48 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U62/ZN (NOR2_X1)         0.03       1.51 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U31/ZN (NOR3_X1)         0.02       1.54 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U169/ZN (INV_X1)         0.02       1.56 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U25/ZN (NAND2_X1)        0.03       1.59 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/U63/ZN (OR2_X2)          0.06       1.64 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/mux1/sel (mux_2_n30_129)
+                                                          0.00       1.64 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/mux1/U1/Z (BUF_X1)       0.04       1.69 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/mux1/U74/ZN (AOI22_X1)
+                                                          0.06       1.75 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/mux1/U14/ZN (INV_X1)     0.03       1.78 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/mux1/c[0] (mux_2_n30_129)
+                                                          0.00       1.78 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/comp/din[0] (twoscompliment_n30_65)
+                                                          0.00       1.78 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/comp/sub_add_1116_b0/B[0] (twoscompliment_n30_65_DW01_sub_0)
+                                                          0.00       1.78 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/comp/sub_add_1116_b0/U15/Z (XOR2_X1)
+                                                          0.08       1.86 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/comp/sub_add_1116_b0/DIFF[1] (twoscompliment_n30_65_DW01_sub_0)
+                                                          0.00       1.86 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/comp/U62/ZN (AOI22_X1)
+                                                          0.04       1.90 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/comp/U53/ZN (INV_X1)     0.03       1.92 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/comp/dout[1] (twoscompliment_n30_65)
+                                                          0.00       1.92 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/B[1] (SIGNED_ADD_n31_65_DW01_add_0)
+                                                          0.00       1.92 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U134/ZN (NAND2_X1)
+                                                          0.04       1.96 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U115/ZN (NAND3_X1)
+                                                          0.04       2.00 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U139/ZN (NAND2_X1)
+                                                          0.04       2.03 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U141/ZN (NAND3_X1)
+                                                          0.03       2.07 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U169/ZN (NAND2_X1)
+                                                          0.03       2.10 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U35/ZN (NAND3_X1)
+                                                          0.03       2.14 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U174/ZN (NAND2_X1)
+                                                          0.03       2.17 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U10/ZN (NAND3_X1)
+                                                          0.04       2.21 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U71/ZN (NAND2_X1)
+                                                          0.03       2.24 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U74/ZN (NAND3_X1)
+                                                          0.03       2.27 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U1_6/CO (FA_X1)
+                                                          0.09       2.36 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U1_7/CO (FA_X1)
+                                                          0.10       2.45 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U86/ZN (NAND2_X1)
+                                                          0.04       2.50 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U87/ZN (NAND3_X1)
+                                                          0.04       2.53 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U92/ZN (NAND2_X1)
+                                                          0.03       2.56 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U93/ZN (NAND3_X1)
+                                                          0.04       2.60 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U23/ZN (NAND2_X1)
+                                                          0.03       2.63 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U25/ZN (NAND3_X1)
+                                                          0.04       2.68 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U145/ZN (NAND2_X1)
+                                                          0.04       2.71 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U16/ZN (NAND3_X1)
+                                                          0.04       2.75 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U156/ZN (NAND2_X1)
+                                                          0.04       2.80 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U113/ZN (NAND3_X1)
+                                                          0.03       2.83 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U162/ZN (NAND2_X1)
+                                                          0.03       2.86 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U112/ZN (NAND3_X1)
+                                                          0.04       2.90 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U149/ZN (NAND2_X1)
+                                                          0.04       2.93 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U42/ZN (NAND3_X1)
+                                                          0.03       2.96 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U185/ZN (NAND2_X1)
+                                                          0.03       3.00 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U33/ZN (NAND3_X1)
+                                                          0.04       3.04 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U190/ZN (NAND2_X1)
+                                                          0.04       3.07 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U192/ZN (NAND3_X1)
+                                                          0.04       3.11 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U97/ZN (NAND2_X1)
+                                                          0.03       3.14 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U99/ZN (NAND3_X1)
+                                                          0.04       3.18 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U67/ZN (NAND2_X1)
+                                                          0.03       3.21 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U1/ZN (NAND3_X1)
+                                                          0.04       3.25 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U55/ZN (NAND2_X1)
+                                                          0.05       3.30 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U57/ZN (NAND3_X1)
+                                                          0.04       3.33 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U62/ZN (NAND2_X1)
+                                                          0.03       3.36 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U63/ZN (NAND3_X1)
+                                                          0.04       3.40 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U39/ZN (NAND2_X1)
+                                                          0.03       3.43 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U41/ZN (NAND3_X1)
+                                                          0.03       3.46 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U1_22/CO (FA_X1)
+                                                          0.09       3.56 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U109/ZN (NAND2_X1)
+                                                          0.04       3.60 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U11/ZN (NAND3_X1)
+                                                          0.04       3.63 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U121/ZN (NAND2_X1)
+                                                          0.03       3.67 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U123/ZN (NAND3_X1)
+                                                          0.04       3.71 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U127/ZN (NAND2_X1)
+                                                          0.04       3.75 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U129/ZN (NAND3_X1)
+                                                          0.03       3.78 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U48/ZN (NAND2_X1)
+                                                          0.02       3.81 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U50/ZN (NAND3_X1)
+                                                          0.04       3.85 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U78/ZN (NAND2_X1)
+                                                          0.04       3.89 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U26/ZN (NAND3_X1)
+                                                          0.04       3.93 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U102/ZN (NAND2_X1)
+                                                          0.04       3.97 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U105/ZN (NAND3_X1)
+                                                          0.03       4.00 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U179/ZN (NAND2_X1)
+                                                          0.02       4.02 r
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U181/ZN (NAND3_X1)
+                                                          0.03       4.06 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/U152/ZN (XNOR2_X1)
+                                                          0.05       4.11 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/add_1588/SUM[30] (SIGNED_ADD_n31_65_DW01_add_0)
+                                                          0.00       4.11 f
+  CAP_2_4/CAP_N/CAPG/C_add/ADDER/dout[30] (SIGNED_ADD_n31_65)
+                                                          0.00       4.11 f
+  CAP_2_4/CAP_N/CAPG/C_add/U40/ZN (NAND2_X1)              0.02       4.13 r
+  CAP_2_4/CAP_N/CAPG/C_add/U4/ZN (NAND2_X1)               0.02       4.15 f
+  CAP_2_4/CAP_N/CAPG/C_add/d_reg1_reg[30]/D (DFF_X1)      0.01       4.16 f
+  data arrival time                                                  4.16
+
+  clock clk (rise edge)                                   4.20       4.20
+  clock network delay (ideal)                             0.00       4.20
+  CAP_2_4/CAP_N/CAPG/C_add/d_reg1_reg[30]/CK (DFF_X1)     0.00       4.20 r
+  library setup time                                     -0.04       4.16
+  data required time                                                 4.16
+  --------------------------------------------------------------------------
+  data required time                                                 4.16
+  data arrival time                                                 -4.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
